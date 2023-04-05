@@ -1,0 +1,115 @@
+body {
+    min-height: 100vh !important;
+}
+
+html,
+body {
+    overflow-x: hidden !important;
+    width: 100vw !important;
+}
+
+/* hero section Titles */
+#hello,
+#art {
+    animation: showTitle-1 1250ms 1 ease;
+}
+
+#art {
+    animation-duration: 1750ms;
+}
+
+@keyframes showTitle-1 {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#with {
+    animation: showTitle-2 4750ms 1 linear;
+}
+
+@keyframes showTitle-2 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width:540px) {
+    #with {
+        animation: showTitle-2 2450ms 1 ease;
+    }
+}
+
+/* hero section Titles */
+
+/* popular arts */
+.arts:nth-child(1) {
+    background: linear-gradient(to top, #111827, #00000000), url("./../images/img/pic1.jpg");
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.arts:nth-child(2) {
+    background: linear-gradient(to top, #111827, #00000000), url("./../images/img/pic2.jpg");
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.arts:nth-child(3) {
+    background: linear-gradient(to top, #111827, #00000000), url("./../images/img/pic3.jpg");
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.arts:nth-child(4) {
+    background: linear-gradient(to top, #111827, #00000000), url("./../images/img/pic4.jpg");
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.arts:nth-child(5) {
+    background: linear-gradient(to top, #111827, #00000000), url("./../images/img/pic5.jpg");
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.arts:nth-child(6) {
+    background: linear-gradient(to top, #111827, #00000000), url("./../images/img/pic6.jpg");
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.arts:nth-child(1) .arts_profile,
+.arts:nth-child(2) .arts_profile,
+.arts:nth-child(3) .arts_profile {
+    background: url("./../images/profile/prof2.svg");
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.arts:nth-child(4) .arts_profile,
+.arts:nth-child(5) .arts_profile,
+.arts:nth-child(6) .arts_profile {
+    background: url("./../images/profile/prof3.svg");
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+/* popular arts */

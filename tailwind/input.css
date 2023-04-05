@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .font-Orbitron {
+        font-family: 'Orbitron', sans-serif;
+    }
+
+    .text-none {
+        color: #00000000
+    }
+
+    .text-stroke {
+        -webkit-text-stroke: 1px #e2e8f0;
+    }
+}
+
+@layer components {
+    .btn {
+        @apply py-3 px-6 rounded-full transition-all;
+    }
+
+    .btn-purple {
+        @apply bg-purple-800;
+    }
+
+    .btn-fuch {
+        @apply bg-fuchsia-600;
+    }
+
+    .btn-gradient {
+        @apply bg-gradient-to-r from-purple-900 to-fuchsia-600
+    }
+
+    .btn:hover {
+        filter: brightness(1.25);
+    }
+}
