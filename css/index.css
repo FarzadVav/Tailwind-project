@@ -8,7 +8,6 @@ body {
     width: 100vw !important;
 }
 
-/* popular arts */
 .arts:nth-child(1) {
     background: linear-gradient(to top, #111827, #00000000), url("./../images/img/pic1.jpg");
     background-size: cover;
