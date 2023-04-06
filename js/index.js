@@ -35,24 +35,3 @@ mobileMenuToggle.addEventListener("animationend", e => {
         mobileMenuToggle.classList.remove("animate-toggle");
     }
 })
-
-const hiddenMobileMenu = event => {
-    const spanInMobileMenusArray = [];
-    const spanInMobileMenus = mobileMenu.querySelectorAll("a, span, svg, g, path")
-    spanInMobileMenus.forEach(Element => {
-        spanInMobileMenusArray.push(Element)
-    })
-
-    const hasElem = event.target === mobileMenuToggle
-        || event.target === mobileMenuToggle.querySelector("path")
-        || event.target === mobileMenu
-        || Boolean(spanInMobileMenusArray.filter(span => event.target === span).length);
-
-    if (!hasElem) {
-        mobileMenu.classList.remove("m-menu-visible");
-        mobileMenu.classList.add("m-menu-hidden");
-    }
-}
-
-$.body.addEventListener("click", e => hiddenMobileMenu(e))
-$.body.addEventListener("touchstart", e => hiddenMobileMenu(e))
