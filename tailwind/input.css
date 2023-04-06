@@ -14,6 +14,14 @@
     .text-stroke {
         -webkit-text-stroke: 1px #e2e8f0;
     }
+
+    .m-menu-hidden {
+        @apply invisible opacity-0 scale-90 -translate-y-4;
+    }
+
+    .m-menu-visible {
+        @apply visible opacity-100 scale-100 translate-y-0;
+    }
 }
 
 @layer components {

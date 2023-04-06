@@ -66,4 +66,43 @@ body {
     background-position: center;
     object-fit: cover;
 }
+
 /* popular arts */
+
+/* mobile menu */
+.animate-toggle {
+    animation: toggle 300ms 1 cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+@keyframes toggle {
+    0% {
+        transform: scale(0.8);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* mobile menu */
+
+/* scroll bar */
+@media only screen and (max-width: 540px) {
+    ::-webkit-scrollbar {
+        width: 0;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: none;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: none;
+    }
+}
+
+/* scroll bar */

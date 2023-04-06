@@ -69,16 +69,16 @@
                 </a>
             </nav>
 
-            <!-- mobile menu -->
+            <!-- mobile toggle -->
             <nav class="w-1/2 h-full flex justify-start items-center gap-5
             sm:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="w-8 h-8">
+                    stroke="currentColor" class="w-8 h-8" id="m-menu-toggle">
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
             </nav>
-            <!-- mobile menu -->
+            <!-- mobile toggle -->
 
             <nav class="w-1/2 h-full flex justify-end items-center
             sm:w-1/3">
@@ -87,6 +87,55 @@
         </header>
     </div>
     <!-- Header -->
+
+    <!-- mobile menu -->
+    <menu class="bg-gradient-to-r from-purple-900 to-fuchsia-600 transition-all duration-300 m-menu-hidden
+    w-11/12 h-max flex flex-col justify-start items-center gap-4 p-5 absolute top-24 left-1/2 -translate-x-1/2 rounded-xl z-50
+    shadow-2xl shadow-gray-900" id="mobile-menu">
+        <a href="#" class="w-full text-xl flex justify-start px-4 py-2 items-center rounded-lg
+        transition-colors hover:bg-[#efefef25]">
+            <span>Home</span>
+        </a>
+        <a href="#" class="w-full text-xl flex justify-start px-4 py-2 items-center rounded-lg 
+        transition-colors hover:bg-[#efefef25]">
+            <span>Contact us</span>
+        </a>
+        <a href="#" class="w-full text-xl flex justify-start px-4 py-2 items-center gap-2 rounded-lg
+        transition-colors hover:bg-[#efefef25] group/link">
+            <span>Blogs</span>
+            <svg class="w-5 h-5 transition-transform group-hover/link:-rotate-180" viewBox="0 0 24 24"
+                version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Iconly/Two-tone/Arrow---Down-Circle" stroke="none" stroke-width="1" fill="none"
+                    fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                    <g id="Arrow---Down-Circle" transform="translate(2.000000, 2.000000)"
+                        class="stroke-slate-200" stroke-width="1.5">
+                        <path
+                            d="M0.7502,10 C0.7502,15.108 4.8912,19.25 10.0002,19.25 C15.1082,19.25 19.2502,15.108 19.2502,10 C19.2502,4.892 15.1082,0.75 10.0002,0.75 C4.8912,0.75 0.7502,4.892 0.7502,10 Z"
+                            id="Stroke-1" opacity="0.400000006"></path>
+                        <polyline id="Stroke-3" points="6.529 8.5577 10 12.0437 13.471 8.5577"></polyline>
+                    </g>
+                </g>
+            </svg>
+        </a>
+        <a href="#" class="w-full text-xl flex justify-start px-4 py-2 items-center gap-2 rounded-lg
+        transition-colors hover:bg-[#efefef25] group/link">
+            <span>Arts</span>
+            <svg class="w-5 h-5 transition-transform group-hover/link:-rotate-180" viewBox="0 0 24 24"
+                version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Iconly/Two-tone/Arrow---Down-Circle" stroke="none" stroke-width="1" fill="none"
+                    fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                    <g id="Arrow---Down-Circle" transform="translate(2.000000, 2.000000)"
+                        class="stroke-slate-200" stroke-width="1.5">
+                        <path
+                            d="M0.7502,10 C0.7502,15.108 4.8912,19.25 10.0002,19.25 C15.1082,19.25 19.2502,15.108 19.2502,10 C19.2502,4.892 15.1082,0.75 10.0002,0.75 C4.8912,0.75 0.7502,4.892 0.7502,10 Z"
+                            id="Stroke-1" opacity="0.400000006"></path>
+                        <polyline id="Stroke-3" points="6.529 8.5577 10 12.0437 13.471 8.5577"></polyline>
+                    </g>
+                </g>
+            </svg>
+        </a>
+    </menu>
+    <!-- mobile menu -->
 
     <!-- hero section -->
     <div class="container mt-5 sm:m-0" id="hero-section">
@@ -109,7 +158,7 @@
     <!-- hero section -->
 
     <!-- popular arts -->
-    <div class="container mt-20" data-aos="zoom-in-up">
+    <div class="container mt-20" data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom">
         <div class="w-full flex justify-between items-center relative
         lg:mt-5 sm:gap-12">
             <span class="flex justify-center items-center gap-2">
@@ -137,7 +186,7 @@
                 transition-all hover:brightness-75"></a>
             </div>
             <div class="arts w-[260px] h-[400px] rounded-full relative
-            lg:translate-y-24 xl:w-[325px] xl:h-[500px]">
+            lg:top-24 xl:w-[325px] xl:h-[500px]">
                 <a href="#" class="arts_profile w-16 h-16 rounded-full absolute -bottom-12 left-1/2 -translate-x-1/2
                 transition-all hover:brightness-75"></a>
             </div>
@@ -152,7 +201,7 @@
                 transition-all hover:brightness-75"></a>
             </div>
             <div class="arts w-[260px] h-[400px] rounded-full relative
-            lg:translate-y-24 xl:w-[325px] xl:h-[500px]">
+            lg:top-24 xl:w-[325px] xl:h-[500px]">
                 <a href="#" class="arts_profile w-16 h-16 rounded-full absolute -bottom-12 left-1/2 -translate-x-1/2
                 transition-all hover:brightness-75"></a>
             </div>
@@ -166,13 +215,9 @@
     <!-- popular arts -->
 
     <!-- Lastest blogs -->
-    <div class="container mt-32" data-aos="zoom-in-up">
+    <div class="container mt-20
+    lg:mt-10" data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom">
         <div class="w-full flex justify-between items-center relative">
-            <div
-                class="bg-gradient-to-r from-purple-950 to-fuchsia-300
-            w-[50vw] h-[50vw] absolute -top-[35vw] left-1/2 -translate-x-1/2 rounded-[50%] rotate-45 -z-10 blur-[120px] opacity-20">
-            </div>
-
             <span class="flex justify-center items-center gap-2">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -254,7 +299,7 @@
     <!-- Lastest blogs -->
 
     <!-- Contact us -->
-    <div class="container mt-20 relative" data-aos="zoom-in-up">
+    <div class="container mt-20 relative" data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom">
         <div class="w-full flex justify-between items-center relative
         lg:mt-5 sm:gap-12">
             <span class="flex justify-center items-center gap-2">
